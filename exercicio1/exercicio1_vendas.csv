@@ -1,0 +1,31 @@
+id_venda;data;produto;categoria;quantidade;valor_unitario;estado_cliente
+V001;05/01/2026;Notebook Dell Inspiron 15;Eletrônicos;2;3500,00;SP
+V002;07/01/2026;Mouse sem fio Logitech;Eletrônicos;5;89,90;RJ
+V003;10/01/2026;Teclado mecânico Redragon;Eletrônicos;3;249,90;MG
+V004;12/01/2026;Monitor LG 24 polegadas;Eletrônicos;1;899,00;RS
+V005;15/01/2026;Cadeira de escritório ergonômica;Móveis;2;650,00;PR
+V006;18/01/2026;Mesa de escritório;Móveis;1;480,00;BA
+V007;20/01/2026;Smartphone Samsung Galaxy A55;Eletrônicos;1;1899,00;SC
+V008;22/01/2026;Fone de ouvido Bluetooth JBL;Eletrônicos;4;199,90;PE
+V009;25/01/2026;Impressora HP DeskJet;Eletrônicos;1;550,00;CE
+V010;28/01/2026;Livro Clean Code;Livros;3;89,90;DF
+V011;02/02/2026;Caderno universitário 10 matérias;Papelaria;10;32,50;SP
+V012;05/02/2026;Caixa de canetas esferográficas;Papelaria;8;15,90;RJ
+V013;08/02/2026;Mochila para notebook;Acessórios;2;129,90;MG
+V014;10/02/2026;Carregador portátil 10000mAh;Eletrônicos;6;99,90;RS
+V015;13/02/2026;Webcam Full HD;Eletrônicos;3;179,90;PR
+V016;16/02/2026;Notebook Dell Inspiron 15;Eletrônicos;1;3500,00;BA
+V017;19/02/2026;Mouse sem fio Logitech;Eletrônicos;7;89,90;SC
+V018;22/02/2026;Teclado mecânico Redragon;Eletrônicos;2;249,90;PE
+V019;25/02/2026;Monitor LG 24 polegadas;Eletrônicos;2;899,00;CE
+V020;28/02/2026;Cadeira de escritório ergonômica;Móveis;3;650,00;DF
+V021;03/03/2026;Mesa de escritório;Móveis;2;480,00;SP
+V022;06/03/2026;Smartphone Samsung Galaxy A55;Eletrônicos;2;1899,00;RJ
+V023;09/03/2026;Fone de ouvido Bluetooth JBL;Eletrônicos;5;199,90;MG
+V024;12/03/2026;Impressora HP DeskJet;Eletrônicos;2;550,00;RS
+V025;15/03/2026;Livro Clean Code;Livros;4;89,90;PR
+V026;18/03/2026;Caderno universitário 10 matérias;Papelaria;6;32,50;BA
+V027;21/03/2026;Caixa de canetas esferográficas;Papelaria;10;15,90;SC
+V028;24/03/2026;Mochila para notebook;Acessórios;3;129,90;PE
+V029;27/03/2026;Carregador portátil 10000mAh;Eletrônicos;4;99,90;CE
+V030;30/03/2026;Webcam Full HD;Eletrônicos;5;179,90;DF
