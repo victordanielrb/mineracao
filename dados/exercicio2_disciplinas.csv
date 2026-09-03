@@ -1,0 +1,13 @@
+﻿id_disciplina;nome_disciplina;id_curso
+D01;Gestão Financeira;C1
+D02;Marketing;C1
+D03;Economia;C1
+D04;Programação I;C2
+D05;Banco de Dados;C2
+D06;Engenharia de Requisitos;C2
+D07;Direito Civil;C3
+D08;Direito Penal;C3
+D09;Direito Constitucional;C3
+D10;Anatomia;C4
+D11;Farmacologia;C4
+D12;Saúde Pública;C4
