@@ -1,0 +1,174 @@
+LISTA DE EXERCÍCIOS — POWER BI E ORANGE DATA MINING
+Neste exercício você será capaz de:
+criar dados → armazenar dados → integrar dados → visualizar → avaliar qualidade →
+tratar dados → minerar dados.
+Orientações gerais
+Nesta lista, você irá criar pequenas bases de dados, analisá-las no Power BI e no
+Orange Data Mining e, posteriormente, investigar problemas de qualidade dos dados.
+As bases deverão ser criadas pelos próprios alunos. Você poderá utilizar o Excel ou
+outra ferramenta para auxiliar na geração dos registros, que DEVERÃO SER
+FICTÍCIOS. Mesmo assim, você será responsável por conferir os dados gerados.
+Organização das atividades
+Exercícios 1, 2 e 3: criação e exploração de bases corretas e completas, sem dados
+vazios ou outros problemas de qualidade.
+Exercício 4: criação de uma versão problemática de uma base já existente, introduzindo
+dados vazios e valores inválidos.
+Exercício 5: criação de uma base com problemas de acurácia, duplicidade e
+consistência.
+Exercício 6: investigação de problemas de qualidade em dados armazenados no
+MariaDB.
+Muito importante: sempre que uma atividade pedir uma base problemática, mantenha
+a versão original correta salva separadamente. Assim, será possível comparar a base
+correta, a base com problemas e a base após o tratamento.
+Conceitos trabalhados
+Nesta lista serão trabalhados:
+Dados vazios: informações que deveriam estar preenchidas, mas não estão.
+Validade: verifica se o valor respeita as regras definidas para aquele campo.
+Acurácia: verifica se o valor corresponde à realidade ou a uma fonte confiável.
+Duplicidade: identifica registros que aparecem mais de uma vez indevidamente.
+Consistência: verifica se diferentes informações são compatíveis entre si.
+OBS: Nesta etapa, não serão trabalhados NaN, outliers ou ruídos.
+PARTE 1 — POWER BI
+EXERCÍCIO 1 — VENDAS
+Ferramentas: Excel e Power BI
+Crie uma base de vendas com aproximadamente 30 registros.
+Utilize as seguintes colunas:
+ID da venda;
+data;
+produto;
+categoria;
+quantidade;
+valor unitário;
+estado do cliente.
+A base deverá estar correta e completa, sem células vazias ou valores inválidos.
+Depois:
+Importe a base para o Power BI.
+Crie um cartão mostrando o valor total das vendas.
+Crie um gráfico mostrando as vendas por produto.
+Crie um gráfico mostrando as vendas por estado.
+Crie um gráfico mostrando a evolução das vendas ao longo do tempo.
+Responda:
+a) Qual produto vendeu mais?
+b) Qual estado apresentou mais vendas?
+c) Qual foi o valor total vendido?
+EXERCÍCIO 2 — GESTÃO ACADÊMICA
+Ferramentas: Excel e Power BI
+Crie quatro pequenas tabelas:
+Alunos: aproximadamente 30 alunos.
+Cursos: aproximadamente 4 cursos.
+Disciplinas: aproximadamente 12 disciplinas.
+Matrículas: aproximadamente 100 registros.
+As tabelas deverão possuir identificadores, como:
+ID do aluno;
+ID do curso;
+ID da disciplina;
+ID da matrícula.
+Primeiro, crie tudo corretamente no Excel.
+Depois:
+Importe o arquivo para o Power BI.
+Crie os relacionamentos entre as tabelas.
+Mostre a quantidade de alunos por curso.
+Mostre a quantidade de matrículas por disciplina.
+Responda:
+a) Qual curso possui mais alunos?
+b) Qual disciplina possui mais matrículas?
+c) Por que utilizar várias tabelas relacionadas pode ser melhor do que colocar todas as
+informações em uma única tabela?
+PARTE 2 — ORANGE DATA MINING
+EXERCÍCIO 3 — CONHECENDO OS DADOS
+Ferramentas: Excel, CSV e Orange
+Crie uma base com aproximadamente 100 clientes.
+Utilize:
+ID do cliente;
+idade;
+cidade;
+estado;
+renda;
+quantidade de compras;
+valor total das compras.
+A base deve estar correta e completa.
+Depois:
+Salve a base como CSV.
+Abra a base no Orange.
+Observe os atributos e seus tipos.
+Utilize as ferramentas de visualização do Orange para explorar os dados.
+Responda:
+a) Qual faixa etária possui mais clientes?
+b) Qual estado possui mais clientes?
+c) Qual é a distribuição da renda?
+d) Existe alguma relação entre quantidade de compras e valor total das compras?
+EXERCÍCIO 4 — DADOS VAZIOS E VALIDADE
+Ferramentas: Excel, CSV e Orange
+Utilize a base do Exercício 3.
+Primeiro, faça uma cópia da base.
+A base original deverá permanecer correta.
+Na cópia, insira alguns problemas.
+Dados vazios
+Insira aproximadamente:
+5 idades vazias;
+5 rendas vazias;
+5 estados vazios;
+5 quantidades de compras vazias.
+Dados inválidos
+Insira alguns valores como:
+idade = 250;
+idade = -5;
+estado = XX;
+renda = -3000;
+quantidade de compras = -10.
+Depois:
+Salve a base problemática como CSV.
+Abra no Orange.
+Procure os dados vazios.
+Procure os valores inválidos.
+Registre os problemas encontrados.
+Faça o tratamento da base.
+Responda:
+a) Quantos dados vazios foram encontrados?
+b) Quais valores eram inválidos?
+c) Qual é a diferença entre um dado vazio e um dado inválido?
+EXERCÍCIO 5 — ACURÁCIA, DUPLICIDADE E CONSISTÊNCIA
+Ferramentas: Excel, CSV e Orange
+Crie uma nova base com aproximadamente 100 clientes.
+Agora você deverá criar três tipos de problemas.
+1. Acurácia
+Crie uma pequena tabela chamada Fonte de Referência.
+Ela deverá conter informações consideradas corretas.
+Altere alguns valores da base principal para que não correspondam à fonte de
+referência.
+Exemplo:
+Cliente 10 → Estado na base: SP
+Fonte de referência → Estado correto: RJ
+2. Duplicidade
+Copie aproximadamente 5 registros e insira-os novamente na base.
+Depois tente identificar as duplicidades.
+3. Consistência
+Crie alguns registros com informações incompatíveis.
+Exemplo:
+Idade: 20 anos
+Data de nascimento: 1980
+Depois importe a base para o Orange e investigue os problemas.
+Responda:
+a) Um valor pode ser válido e ainda assim estar errado? Dê um exemplo.
+b) O que é uma duplicidade?
+c) O que significa dizer que dois dados são inconsistentes?
+d) Explique, com suas palavras, a diferença entre validade e acurácia.
+EXERCÍCIO 6 — ORANGE + MARIADB
+Ferramentas: MySQL/MariaDB e Orange
+Crie um pequeno banco de dados contendo:
+aproximadamente 30 clientes;
+aproximadamente 10 produtos;
+aproximadamente 100 vendas.
+Primeiro, crie as informações corretamente.
+Depois, introduza alguns problemas já estudados:
+dados vazios;
+valores inválidos;
+duplicidades;
+inconsistências.
+Conecte o Orange ao banco de dados e investigue as informações.
+Responda:
+a) Quais problemas foram encontrados?
+b) Em quais campos eles apareceram?
+c) Quantos registros foram afetados?
+d) O fato de os dados estarem armazenados em um banco de dados garante que eles
+estejam corretos? Explique
