@@ -57,10 +57,13 @@ deactivate
 
 ## Como rodar
 
-Com o venv ativado, execute o script do exercício:
+Com o venv ativado, execute o script do exercício desejado:
 
 ```bash
 python exercicio1.py
+python exercicio2.py
+...
+python exercicio8.py
 ```
 
 ## Dependências
