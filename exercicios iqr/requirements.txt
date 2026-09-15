@@ -1,3 +1,0 @@
-numpy==2.5.0
-pandas>=2.2
-matplotlib==3.11.0
